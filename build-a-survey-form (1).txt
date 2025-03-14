@@ -1,0 +1,133 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kahle Counselling Hub Training Satisfaction Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">Kahle Counselling Hub Training Satisfaction Survey</h1>
+      <p id="description">Please tell us about your experience</p>
+      <form id="survey-form">
+        <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" type="text" required placeholder="Susan Williams"></label>
+        <label id="email-label" for="email">Email: <input id="email" type="email" required placeholder="susanw25@hotmail.com"></label>
+        <label id="number-label" for="number">Age: <input id="number" type="number" min="16" max="100" placeholder="25"></label>
+        </fieldset>
+        <fieldset>
+        <label for="dropdown">Gender</label>
+        <select id="dropdown" name="gender">
+          <option value="">(select one)</option>
+          <option value="0">Male</option>
+          <option value="1">Female</option>
+          <option>Prefer not to say</option>
+          </select>
+          </fieldset>
+          <fieldset>
+          <legend>Which option best describes your reason for undergoing training?</legend>
+          <label for="module-requirement"><input name="reason" type="radio" value="st" class="inline" id="module-requirement" checked>Module Requirement</label>
+          <label for="certification"><input name="reason" type="radio" value="certificate" class="inline" id="certification">Certification</label>
+          <label for="skill-enhancement"><input name="reason" type="radio" value="skill" class="inline" id="skill-enhancement">Skill Enhancement</label>
+          </fieldset>
+          <fieldset>
+          <legend>What aspects of the training did you enjoy?</legend>
+            <label for="assessments"><input type="checkbox" value="assessments" class="inline" id="assessments">Assessments</label>
+           <label for="roleplaying"><input type="checkbox" value="roleplaying" class="inline" id="roleplaying">Roleplaying</label>
+            <label for="facilitation"><input type="checkbox" value="facilitation" class="inline" id="facilitation">Facilitation</label>
+            <label for="group-discussions"><input type="checkbox" value="group-discussions" class="inline" id="group-discussions">Group discussions</label>
+            <label for="self-reflection"><input type="checkbox" value="self-reflection" class="inline" id="self-reflection">Self-reflection exercises</label>
+          </fieldset>
+          <fieldset>
+            <fieldset>
+              <legend>Would you recommend this training course to a friend?</legend>
+        <select id="dropdown" name="recommendation">
+          <option value="">(select one)</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+          </select>
+          </fieldset>
+          <fieldset>
+            <label>Any comments or suggestions?<textarea placeholder="Enter your comment or suggestion here..." cols="40" rows="4"></textarea>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+      </form>
+      </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+h1 {
+  text-align: center;
+  font-family: arial;
+  background-color:  #97D2D6;
+  margin-right: 1em;
+  margin-left: 1em;
+  padding: 0.6em;
+}
+
+p {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: helvetica;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin: 0.45rem 0 0 0;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+fieldset {
+  padding: 0.9rem 0;
+  border: none;
+  max-width: 500px;
+  min-width: 300px;
+  border-bottom: 2px solid #90D5FF;
+  margin-top: 8px;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+form {
+  width: 70vw;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+input {
+  width: 60%
+}
+
+input[type="submit"] {
+  display: block;
+  width: 20%;
+  margin: 0 0 0 0;
+}
+
+textarea {
+  width: 80%
+}
+
+** end of undefined **
+
